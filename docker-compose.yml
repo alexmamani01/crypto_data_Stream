@@ -98,10 +98,15 @@ services:
       retries: 5
       timeout: 3s
 
-  python-requirements:
+  coin_consumer:
     build:
       context: .  
-      dockerfile: Python.Dockerfile
+      dockerfile: coin_consumer.Dockerfile
+
+  coin_producer:
+    build:
+      context: .  
+      dockerfile: coin_producer.Dockerfile
 
 
 
