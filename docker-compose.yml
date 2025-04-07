@@ -27,6 +27,8 @@ services:
         # Replace CLUSTER_ID with a unique base64 UUID using "bin/kafka-storage.sh random-uuid"
         # See https://docs.confluent.io/kafka/operations-tools/kafka-tools.html#kafka-storage-sh
       CLUSTER_ID: ${CLUSTER_ID}
+      
+     
     healthcheck:
       test: [ "CMD", "bash", "-c", 'nc -z localhost 9092' ]
       interval: 10s
@@ -95,7 +97,12 @@ services:
       interval: 5s
       retries: 5
       timeout: 3s
-      
+
+  python-requirements:
+    build:
+      context: .  
+      dockerfile: Python.Dockerfile
+
 
 
 volumes: 
