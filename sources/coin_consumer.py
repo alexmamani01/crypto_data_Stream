@@ -19,7 +19,7 @@ def create_postgres_sink():
         host= POSTGRES_HOST, 
         port = POSTGRES_PORT, 
         dbname= POSTGRES_DB, 
-        user= POSTGRES_USER
+        user= POSTGRES_USER,
         password= POSTGRES_PWD, 
         table_name= 'Bitcoin_price',
         schema_auto_update=True, 
