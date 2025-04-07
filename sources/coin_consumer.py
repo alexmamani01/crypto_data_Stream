@@ -8,9 +8,9 @@ def extract_coin_data(message):
     return {
         "coin": message['name'] ,
     
-        "price_usd": message ['price'] ,
+        "price_usd": latest_quote ['price'] ,
         "volume":  latest_quote['volume_24h']    ,
-        "update": message['last_update']
+        "update": latest_quote['last_updated']
           
     }
     
@@ -27,6 +27,7 @@ def create_postgres_sink():
     )
     return sink
 
+
 def main():
     app= Application(
         broker_address= "localhost:9092",
@@ -40,7 +41,7 @@ def main():
     dataframe.update(lambda coin_data: print (coin_data))
     postgres_sink= create_postgres_sink()
     dataframe.sink(postgres_sink)
-    app.run
+    app.run()
 
 if __name__=='__main__':
     main()
