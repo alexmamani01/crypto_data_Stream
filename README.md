@@ -1,6 +1,8 @@
 # Crypto Data Stream: Análisis de Mercado en Tiempo Real con Apache Kafka y Python
+
 ## 🚀 Resumen del Proyecto
-Este proyecto presenta una solución robusta y escalable para el streaming y análisis de datos de mercado de criptomonedas en tiempo real.
+En este proyecto presento una solución robusta y escalable para el streaming y análisis de datos de mercado de criptomonedas en tiempo real, como parte de mi exploracion a las arquitecturas de Data Streaming <3
+Este proyecto lo realicé en el verano de 2025
 Aprovechando Apache Kafka para una ingesta de datos fiable y Python para el procesamiento, se capturan actualizaciones de precios en vivo desde la API de Binance.
 Esto establece una arquitectura fundamental para el monitoreo de mercado en tiempo real, trading algorítmico o aplicaciones analíticas avanzadas.
 
@@ -31,26 +33,24 @@ Integración de API: Binance WebSocket API
 Librerías: websocket-client, json, asyncio, confluent-kafka (consumidor)
 
 ## 📂 Estructura del Proyecto
+```
 crypto_data_Stream/
 ├── docker-compose.yml              # Define los servicios para Kafka, Zookeeper, Productor, Consumidor
 ├── producer.py                     # Script Python para obtener datos de Binance API y enviarlos a Kafka
 ├── consumer.py                     # Script Python para consumir datos de Kafka y procesarlos
 └── README.md                       # Documentación del proyecto (este archivo)
+```
 
 ##🚀 Cómo Ejecutar Localmente
-Para poner en marcha este flujo de datos criptográficos en tiempo real en tu máquina, sigue estos sencillos pasos:
+Para poner en marcha este flujo de datos criptográficos en tiempo real en tu máquina, y hacer tus experimentos jaja, sigue estos sencillos pasos:
 
-Clona el repositorio:
-
-Bash
+1-Clona el repositorio(yo uso la terminal Bash)
 
 git clone https://github.com/alexmamani01/crypto_data_Stream.git
 cd crypto_data_Stream
 Asegúrate de que Docker esté en ejecución: Verifica que Docker Desktop o tu demonio de Docker esté activo.
 
-Inicia los servicios:
-
-Bash
+2-Inicia los servicios:
 
 docker-compose up --build
 Este comando:
@@ -65,22 +65,21 @@ Iniciará el contenedor producer.py, que comenzará a obtener datos de Binance y
 
 Iniciará el contenedor consumer.py, que leerá los mensajes del tema binance_topic y los imprimirá en la consola (verás el flujo de datos en tiempo real).
 
-Monitorea la salida:
+3-Monitorea la salida:
 Verás los logs del producer indicando que se están enviando datos, y los logs del consumer mostrando los datos de criptomonedas en tiempo real que se reciben y procesan.
 
-Detén los servicios:
-
-Bash
+4-Detén los servicios (si tenés que detener los servicios por algun problema ): 
 
 docker-compose down
-## 🔮 Mejoras Futuras
+## 🔮 Posible mejoras Futuras
 Almacenamiento de Datos: Integrar con una base de datos (ej. PostgreSQL, MongoDB, Data Lake) para el almacenamiento persistente de los datos transmitidos.
 
 Dashboard en Tiempo Real: Conectar el flujo de Kafka a una herramienta de visualización (ej. Power BI, Tableau, Grafana) para un dashboard en vivo.
 
-Detección de Anomalías: Implementar algoritmos de detección de anomalías en tiempo real sobre los datos consumidos.
+Detección de Anomalías: Implementar algoritmos de detección de anomalías en tiempo real sobre los datos consumidos.Muy pronto estaré aplicando esto
 
 Escalabilidad: Explorar la escalabilidad de clústeres de Kafka y el despliegue en plataformas cloud (AWS MSK, Confluent Cloud).
 
-##👋 ¡Conectemos!
+## 👋 ¡Conectemos!
 ¡No dudes en explorar el código, contribuir o contactarme si tienes alguna pregunta o idea de colaboración!
+Alexandra
