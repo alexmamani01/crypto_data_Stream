@@ -2,11 +2,11 @@
 
 ## 🚀 Resumen del Proyecto
 En este proyecto presento una solución robusta y escalable para el streaming y análisis de datos de mercado de criptomonedas en tiempo real, como parte de mi exploracion a las arquitecturas de Data Streaming <3.
-Este proyecto lo realicé en el verano de 2025.
-Aprovechando Apache Kafka para una ingesta de datos fiable y Python para el procesamiento, se capturan actualizaciones de precios en vivo desde la API de Binance.
-Esto establece una arquitectura fundamental para el monitoreo de mercado en tiempo real, trading algorítmico o aplicaciones analíticas avanzadas.
 
-Esta configuración ejemplifica principios clave de ingeniería de datos a la vez que sienta las bases para el análisis y visualización de datos de alto volumen en tiempo real.
+Este proyecto lo realicé en el verano de 2025.
+
+Aprovechando Apache Kafka para una ingesta de datos fiable y Python para el procesamiento, se capturan actualizaciones de precios en vivo desde la API de Binance.
+Esto establece una arquitectura fundamental para el monitoreo de mercado en tiempo real, trading algorítmico o aplicaciones analíticas avanzadas. Esta configuración ejemplifica principios clave de ingeniería de datos a la vez que sienta las bases para el análisis y visualización de datos de alto volumen en tiempo real.
 
 ## ✨ Características Clave y Tecnologías
 Ingesta de Datos en Tiempo Real: Captura datos de precios de criptomonedas en vivo desde la API de Binance.
