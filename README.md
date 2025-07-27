@@ -1,8 +1,8 @@
 # Crypto Data Stream: Análisis de Mercado en Tiempo Real con Apache Kafka y Python
 
 ## 🚀 Resumen del Proyecto
-En este proyecto presento una solución robusta y escalable para el streaming y análisis de datos de mercado de criptomonedas en tiempo real, como parte de mi exploracion a las arquitecturas de Data Streaming <3
-Este proyecto lo realicé en el verano de 2025
+En este proyecto presento una solución robusta y escalable para el streaming y análisis de datos de mercado de criptomonedas en tiempo real, como parte de mi exploracion a las arquitecturas de Data Streaming <3.
+Este proyecto lo realicé en el verano de 2025.
 Aprovechando Apache Kafka para una ingesta de datos fiable y Python para el procesamiento, se capturan actualizaciones de precios en vivo desde la API de Binance.
 Esto establece una arquitectura fundamental para el monitoreo de mercado en tiempo real, trading algorítmico o aplicaciones analíticas avanzadas.
 
